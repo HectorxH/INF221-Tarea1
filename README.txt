@@ -6,6 +6,6 @@ SOBRE LOS MAKEFILE
 	☆ Ingresar "./main.out" para ejecutar el código.
 	☆ Ingresar "make clean" en la consola para borrar los archivos .o y .out
 SOBRE CARPETAS
-  ☆ Cada problema está en su carpeta para mantener el orden.
-  
+  	☆ Cada problema está en su carpeta para mantener el orden.
+	
 (∩ᄑ_ᄑ)⊃━☆ﾟ*･｡*･:≡( ε:)
