@@ -31,7 +31,7 @@ int main() {
     cin >> T;
 
     string str;
-    getline(cin, str);
+    cin.ignore();
     cin.ignore();
     while (T--) {
         graph G;
@@ -43,6 +43,7 @@ int main() {
             G.push_back(str);
             visited.push_back(vi(str.size(), -1));
         }
+
         int i, j;
         while (true) {
             stringstream stream(str);
@@ -61,6 +62,7 @@ int main() {
             getline(cin, str);
             if (str.empty()) break;
         }
+
         cout << endl;
     }
 
