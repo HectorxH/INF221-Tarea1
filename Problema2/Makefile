@@ -1,17 +1,17 @@
 TARGET = main.out #Nombre del ejecutable producido
 
-CFLAGS = -Wall -Wextra -Wpointer-arith -g -std=gnu11
-CC = gcc
+CFLAGS = -Wall -Wextra -Wpointer-arith
+CC = g++
 
-SRCS := $(wildcard *.c)
+SRCS := $(wildcard *.cpp)
 HEADERS := $(wildcard *.h)
-OBJECTS := $(SRCS:%.c=%.o)
+OBJECTS := $(SRCS:%.cpp=%.o)
 
 all: $(TARGET)
 
 .PHONY: all clean
 
-%.o: %.c
+%.o: %.cpp
 	$(CC) $(CFLAGS) -c $< -o $@
 
 #.PRECIOUS: $(TARGET) $(OBJECTS)
