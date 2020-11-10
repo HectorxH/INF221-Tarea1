@@ -7,5 +7,5 @@ SOBRE LOS MAKEFILE
 	☆ Ingresar "make clean" en la consola para borrar los archivos .o y .out
 SOBRE CARPETAS
   	☆ Cada problema está en su carpeta para mantener el orden.
-	
+	☆ Dejamos los archivos de test en sus carpetas respectivas.
 (∩ᄑ_ᄑ)⊃━☆ﾟ*･｡*･:≡( ε:)
