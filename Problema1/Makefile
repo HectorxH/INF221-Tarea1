@@ -1,7 +1,7 @@
 TARGET = main.out #Nombre del ejecutable producido
 
 CFLAGS = -Wall -Wextra -Wpointer-arith
-CC = g++
+CC = g++ -std=c++11
 
 SRCS := $(wildcard *.cpp)
 HEADERS := $(wildcard *.h)
