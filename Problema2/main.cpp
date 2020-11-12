@@ -1,12 +1,16 @@
 #include <iostream>
 #include <vector>
 #include <sstream> 
+#include <queue>
+#include <utility>
 
 using namespace std;
 
 typedef vector<int> vi;
 typedef vector<string> graph;
 typedef vector<vi> vvi;
+typedef pair<int, int> ii;
+typedef queue<ii> qii;
 
 /*
  * Function: dfs
@@ -24,19 +28,34 @@ typedef vector<vi> vvi;
 int dfs(int i, int j, graph& G, vvi& visited, int id) {
     int n = G.size();
     int m = G[0].size();
-    if (i < 0 || i >= n || j < 0 || j >= m) return 0;
-    if (visited[i][j] != -1) return 0;
-    if (G[i][j] == 'L') return 0;
 
-    int sum = 1;
-    visited[i][j] = id;
-    // Revisa todos las celdas adyacentes.
-    for (int off_i = -1; off_i < 2; off_i++) {
-        for (int off_j = -1; off_j < 2; off_j++) {
-            sum += dfs(i + off_i, j + off_j, G, visited, id);
+    int sum = 0;
+
+    qii q;
+    q.push(ii(i, j));
+
+
+    while (!q.empty()) {
+        ii curr = q.front();
+        q.pop();
+
+        i = curr.first;
+        j = curr.second;
+
+        if (i < 0 || i >= n || j < 0 || j >= m) continue;
+        if (visited[i][j] != -1) continue;
+        if (G[i][j] == 'L') continue;
+
+        visited[i][j] = id;
+        sum++;
+
+        // Revisa todos las celdas adyacentes.
+        for (int off_i = -1; off_i < 2; off_i++) {
+            for (int off_j = -1; off_j < 2; off_j++) {
+                q.push(ii(i + off_i, j + off_j));
+            }
         }
     }
-
     return sum;
 }
 
