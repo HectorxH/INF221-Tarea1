@@ -5,8 +5,10 @@ SOBRE LOS MAKEFILE
 	☆ Ingresar "make" en la consola para ejecutar el makefile.
 	☆ Ingresar "./main.out" para ejecutar el código.
 	☆ Ingresar "make clean" en la consola para borrar los archivos .o y .out
-SOBRE CARPETAS
+SOBRE LAS CARPETAS
   	☆ Cada problema está en su carpeta para mantener el orden.
 	☆ Dejamos los archivos de test en sus carpetas respectivas.
 	
+* El grupo fue creado con permiso de Gabriel*
+
 (∩ᄑ_ᄑ)⊃━☆ﾟ*･｡*･:≡( ε:)
