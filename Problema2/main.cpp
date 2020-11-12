@@ -16,6 +16,7 @@ typedef queue<ii> qii;
  * Function: dfs
  * ----------------------------
  *   Hace el recorrido DFS (en profundidad) sobre el grafo.
+ *   Se utiliza el algoritmo iterativo debido a máximo tamaño de input (999x999)
  *
  *   int i - posición de la celda en el eje x.
  *   int j - posición de la celda en el eje y.
